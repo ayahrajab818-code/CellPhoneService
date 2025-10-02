@@ -35,6 +35,10 @@ public class CellPhoneApplication {
 
         display(phone);
 
+        CellPhone yourPhone = new CellPhone(1234
+                ,"pixel","fi","888-88-888","ayah");
+
+
     }
 
     private static void display(CellPhone phone){
