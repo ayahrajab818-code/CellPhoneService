@@ -25,7 +25,7 @@ class CellPhone{
     public String getModel() {
         return model;
     }
-    public void setModle(String model){
+    public void setModel(String model){
         this.model = model;
     }
 
@@ -44,12 +44,16 @@ class CellPhone{
         this.phoneNumber = phoneNumber;
     }
 
-
-
     public String getOwner() {
         return owner;
     }
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+    public void dial(String phoneNumberToCall){
+        System.out.println(owner + "'s phone ("+ phoneNumber +" )is calling" +  phoneNumberToCall);
+        System.out.println("Ring!");
+        System.out.println("Ring!");
+        System.out.println("Ring!");
     }
 }

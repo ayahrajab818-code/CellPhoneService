@@ -15,7 +15,7 @@ public class CellPhoneApplication {
         System.out.print("What model is the phone? ");
         String model = scanner.nextLine();
 
-        phone.setPhoneNumber(model);
+        phone.setModel(model);
 
         System.out.print("Who is the carrier? ");
         String carrier = scanner.nextLine();
@@ -31,6 +31,17 @@ public class CellPhoneApplication {
         String owner = scanner.nextLine();
 
         phone.setOwner(owner);
+        phone.dial("999-999-9999");
 
+        display(phone);
+
+    }
+
+    private static void display(CellPhone phone){
+        System.out.println("---------");
+        System.out.println("cell phone: [SN: " +  phone.getPhoneNumber() + "]");
+        System.out.println(" owner: " + phone.getOwner());
+        System.out.println(" model: " + phone.getModel());
+        System.out.println(" number: " + phone.getPhoneNumber());
     }
 }
